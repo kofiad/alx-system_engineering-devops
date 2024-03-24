@@ -34,4 +34,16 @@ What is the server using to communicate with the computer of the user requesting
 The server is using the TCP/IP (Internet Protocol), which is the most commonly used network connection on the internet; over which a HTTP request/response pair is done, which itself is commonly used transfer protocol to transfer data over the network.
 
 Issues with the simple web stack
-SPOF(Single Point of Failure) is the server. It is a SPOF because if it goes down then the web site stops working. Also the infrastructure cannot scale and will not be able to handle traffic that would exceed the server capacity.
+1. SPOF;
+
+Single Point Of Failure (SPOF), is a part of the system that, if it fails the whole entire system stops from working.
+
+The above infrastructure has no redundancy that can help in avoiding SPOFs, hence, any single failure in any part of the system will cause all the system to stop.
+
+2. Downtime when maintenance needed (like deploying new code web server needs to be restarted);
+
+The Infrastructure above, downtime will occur because we only have one server and one database, that is used to make the deployment and maintenance hence no way users will access the website in that period.
+
+3. Cannot scale if too much incoming traffic;
+
+The above infrastructure cannot scale if there’s too much incoming traffic because no second server in the system to share loads and the system will be overloaded.
