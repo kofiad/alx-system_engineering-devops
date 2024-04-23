@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# fixing docker apache container error
+echo "ServiceName localhost" >> /etc/apache2.conf
+service apache2 start
