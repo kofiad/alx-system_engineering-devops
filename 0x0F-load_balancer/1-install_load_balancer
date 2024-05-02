@@ -40,8 +40,8 @@ frontend gilbshenyo-tech-frontend
 
 backend gilbshenyo-tech-backend
     balance roundrobin
-    server 478506-web-01 54.158.187.164 check
-   server 478506-web-02 54.89.108.182 check
+    server 478506-web-01 54.158.187.164:80 check
+   server 478506-web-02 54.89.108.182:80 check
 "
 
 # shellcheck disable=SC2154
