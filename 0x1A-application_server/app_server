@@ -75,6 +75,5 @@ tmux new-session -d 'gunicorn --bind 0.0.0.0:5002 api.v1.app:app'
 
 # Setup tmux session for task 5
 cd /home/ubuntu/AirBnB_clone_v4
-git checkout app-server
 
 echo "Done !!!!"
